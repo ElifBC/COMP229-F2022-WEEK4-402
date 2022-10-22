@@ -11,3 +11,7 @@ export function DisplayMovieList(req, res, next){
 
     })
 }
+
+export function DisplayMovieAddPage(req, res, next){
+    res.render('index', { title: 'Add Movie', page: 'movies/edit', movie: {}});
+}
